@@ -1,0 +1,53 @@
+#panel {
+  background-color: #000;
+  font-weight: normal;
+  height: 28px;
+  color: #dadada;
+  font-feature-settings: "tnum";
+  transition-duration: 250ms;
+  font-size: 9.75pt;
+  font-weight: 400;
+  transition: all;
+  box-shadow: none;
+  transition-duration: 250ms;
+}
+#panel:overview, #panel.unlock-screen, #panel.login-screen, #panel.lock-screen {
+  background-color: rgba(0,0,0,0);
+}
+
+#panel:overview .panel-corner,
+#panel.unlock-screen .panel-corner,
+#panel.login-screen .panel-corner,
+#panel.lock-screen .panel-corner {
+  -panel-corner-radius: 0;
+  -panel-corner-background-color: rgba(0, 0, 0, 0);
+  -panel-corner-border-color: rgba(0, 0, 0, 0);
+  transition: all;
+  transition-duration: 250ms;
+}
+
+#panel .panel-corner {
+  -panel-corner-radius: 10px;
+  -panel-corner-background-color: #000;
+  -panel-corner-border-width: 2px;
+  -panel-corner-border-color: transparent;
+  -panel-corner-opacity: 1;
+  transition: all;
+  transition-duration: 250ms;
+}
+
+#panel .panel-button {
+  -natural-hpadding: 8px;
+  -minimum-hpadding: 8px;
+  font-weight: normal;
+  color: #fff;
+  border-radius: 100px;
+  transition: all;
+  transition-duration: 150ms;
+  margin-bottom: 1px;
+}
+
+#panel .panel-button:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+}
