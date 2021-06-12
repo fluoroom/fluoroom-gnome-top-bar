@@ -1,4 +1,4 @@
-#panel {
+#panel, #panel:overview, #panel.unlock-screen, #panel.login-screen, #panel.lock-screen  {
   background-color: #000;
   font-weight: normal;
   height: 28px;
@@ -11,22 +11,11 @@
   box-shadow: none;
   transition-duration: 250ms;
 }
-#panel:overview, #panel.unlock-screen, #panel.login-screen, #panel.lock-screen {
-  background-color: rgba(0,0,0,0);
-}
 
-#panel:overview .panel-corner,
+#panel .panel-corner, #panel:overview .panel-corner,
 #panel.unlock-screen .panel-corner,
 #panel.login-screen .panel-corner,
 #panel.lock-screen .panel-corner {
-  -panel-corner-radius: 0;
-  -panel-corner-background-color: rgba(0, 0, 0, 0);
-  -panel-corner-border-color: rgba(0, 0, 0, 0);
-  transition: all;
-  transition-duration: 250ms;
-}
-
-#panel .panel-corner {
   -panel-corner-radius: 10px;
   -panel-corner-background-color: #000;
   -panel-corner-border-width: 2px;
@@ -36,7 +25,7 @@
   transition-duration: 250ms;
 }
 
-#panel .panel-button {
+#panel .panel-button, #panel:overview.panel-button, #panel.unlock-screen.panel-button, #panel.login-screen.panel-button, #panel.lock-screen.panel-button {
   -natural-hpadding: 8px;
   -minimum-hpadding: 8px;
   font-weight: normal;

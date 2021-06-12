@@ -1,7 +1,8 @@
 {
   "name": "fluoroom's Top Bar",
-  "description": "My custom top bar based on WhiteSur with Gnome's default style, with some modifications.",
+  "description": "Persistent top bar based on WhiteSur with Gnome's default style, with some modifications.",
   "uuid": "fluoroom-gnome-top-bar@fluoroom.github.com",
+  "url": "https://github.com/fluoroom/fluoroom-gnome-top-bar",
   "shell-version": [
     "40"
   ]
