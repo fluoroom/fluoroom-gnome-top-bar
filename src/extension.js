@@ -17,15 +17,20 @@
  */
 
 /* exported init */
+const Main = imports.ui.main;
+const initialClasses = Main.panel.statusArea['aggregateMenu'].container.style_class;
 
 class Extension {
     constructor() {
     }
 
     enable() {
+        Main.panel.statusArea['aggregateMenu'].container.style_class=initialClasses+' aggregateMenu';
+        
     }
 
     disable() {
+        Main.panel.statusArea['aggregateMenu'].container.style_class=initialClasses;
     }
 }
 

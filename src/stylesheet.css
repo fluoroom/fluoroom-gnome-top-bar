@@ -34,9 +34,19 @@
   transition: all;
   transition-duration: 150ms;
   margin-bottom: 1px;
+  margin-right:1px;
 }
 
 #panel .panel-button:hover {
   color: white;
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+#panel .panel-button.clock-display {
+  margin:0 0 0 0;
+}
+
+.aggregateMenu .panel-button{
+  margin-right:0px!important;
+  text-align: right;
 }
